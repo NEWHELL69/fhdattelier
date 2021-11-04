@@ -1,0 +1,156 @@
+header {
+  /* box model */
+  height: 100vh;
+}
+
+.header__carousel {
+  /* box model */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  /*  */
+  pointer-events: none;
+}
+
+.header__overlay {
+  /*  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  /* visual */
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.header-content {
+  /* position */
+  height: 100%;
+
+  /* box model */
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+
+.header-content__inner {
+  /* position */
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-column-end: 3;
+  position: relative;
+
+  /* box model */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.header-content__inner .subtitle {
+  /* box model */
+  margin-top: 2rem;
+
+  /* text */
+  color: var(--color-white-variant);
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-weight: lighter;
+
+  /* fade in up animation speed */
+  animation-delay: calc(var(--typewriterSpeed) + 1s);
+}
+
+.header-content__inner .arrow {
+  /* position */
+  position: absolute;
+  transform: translateX(-50%);
+  top: 90%;
+  left: 50%;
+
+  /* text */
+  color: var(--color-accent);
+}
+
+.header-content__inner .arrow span {
+  font-size: 100px;
+}
+
+.header-content__inner .arrow.arrow__bounce {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow-bounce;
+  animation-timing-function: ease;
+}
+
+@keyframes arrow-bounce {
+  0%   { transform: translate(-50%, 0); }
+  50%  { transform: translate(-50%, -25px); }
+  100% { transform: translate(-50%, 0); }
+}
+
+/* Typewriter effect below. */
+
+:root {
+  --typewriterSpeed: 6s;
+  --typewriterCharacters: 12;
+}
+
+h1 {
+  font-size: clamp(2rem, 8vw, 6rem);
+  font-weight: lighter;
+  font-family: 'IBM Plex Mono', monospace, sans-serif;
+  position: relative;
+  width: max-content;
+  color: var(--color-white-variant);
+  clip-path: inset(0% calc(100% - 0.1em) 0% 0%);
+  animation: typing var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+  padding-left: 0.1em; 
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::after {
+  width: 0.1em;
+  background: var(--color-accent);
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
+             blink calc((var(--typewriterSpeed)/var(--typewriterCharacters))) normal 1s infinite;
+}
+
+.h1AfterHide::after {
+  /* This class is used by this folder's script. This is a simple hack to hide cursor after words are typed */
+  width: 0;
+}
+
+@keyframes typewriter {
+  to {
+    left: calc(100% - 0.1em);
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes typing{
+  to{
+    clip-path:inset(0% 0% 0% 0%);
+  }
+}

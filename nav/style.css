@@ -1,0 +1,212 @@
+.nav {
+  /* box model */
+  height: 100vh;
+  width: 100%;
+
+  /*
+  nav is fixed atop of header. Due to this header pointer-events are not triggered on mouse clicks.
+  So setting pointer-events: none on nav. But doing this results in nav-btn inheriting pointer-events: none.
+  So it is important to set pointer-events: all on nav-btn.
+  */
+  pointer-events: none;
+}
+
+.nav__bar {
+  /* position */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media (min-width: 48rem) {
+  .nav__bar {
+    /* position */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.nav__btn {
+  /* position */
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  z-index: 2;
+
+  /*
+  nav is fixed atop of header. Due to this header pointer-events are not triggered on mouse clicks.
+  So setting pointer-events: none on nav. But doing this results in nav-btn inheriting pointer-events: none.
+  So it is important to set pointer-events: all on nav-btn.
+  */
+  pointer-events: all;
+}
+
+.nav__logo {
+  /* position */
+  position: absolute;
+  left: 25px;
+  top: 50px;
+  transform: translateY(-50%);
+}
+
+.nav-bar {
+  /* box model */
+  width: 100%;
+  height: 100vh;
+
+  /* visual */
+  background-color: rgba(216, 213, 191, 0.6);
+  backdrop-filter: blur(10px);
+
+  /* animation */
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+
+  /* misc */
+  pointer-events: none;
+}
+
+@media (min-width: 48rem) {
+  .nav-bar {
+    /* box model */
+
+    /* nav-bar height is equal to nav-btn's top/bottom-margin + height. Doing this makes the nav-btn feels like it is centered. */
+    height: 50px;
+    margin: 25px 0;
+    width: 70vw;
+
+    /* visual */
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  }
+}
+
+.nav-bar.show {
+  /* visual */
+  opacity: 1;
+
+  /* misc */
+
+  /* The style below has two purposes.
+  1. To enable all pointer-events once nav-bar is toggled.
+  2. nav-bar inherits pointer-events: none from nav, the style below overrides that.
+  */
+  pointer-events: all;
+}
+
+.nav-bar__inner {
+  /* position */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* box model */
+  display: inline-block;
+}
+
+@media (min-width: 48rem) {
+  .nav-bar__inner {
+    /* position */
+
+    /* box model */
+    display: block;
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+
+.nav-bar__inner ul {
+  /* position */
+}
+
+@media (min-width: 48rem) {
+  .nav-bar__inner ul {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 48rem) {
+  .nav-bar__inner li.fadeInUp {
+    transform: translateY(1rem);
+  }
+}
+
+.nav-bar__social-links {
+  /* box model */
+  display: flex;
+}
+
+.nav-bar__social-links > * + * {
+  /* position */
+  margin-left: 20px;
+}
+
+@media (min-width: 48rem) {
+  .nav-bar__social-links {
+    /* position */
+    margin-left: auto !important;
+  }
+
+  .nav-bar__social-links a {
+    /* position */
+    font-size: 1.5rem;
+  }
+}
+
+.nav-bar__item {
+  /* text */
+  list-style-type: none;
+}
+
+@media (min-width: 48rem) {
+  .nav-bar ul.flow > * + * {
+    margin-left: clamp(12px, 1.2vw, 20px);
+  }
+}
+
+.nav-bar__link {
+  /* text */
+  font-size: 2rem;
+  color: var(--color-black-variant);
+  text-decoration: none;
+}
+
+@media (min-width: 48rem) {
+  .nav-bar__link {
+    /* text */
+    font-size: 1rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.nav-logo {
+  /* misc */
+
+  /* This style is necessay because .nav-logo is inheriting pointer-events: none from nav class. */
+  pointer-events: all;
+  width: clamp(75px, 9vw, 100px);
+}
+
+.nav-logo svg {
+  /* box model */
+
+  /* This height is equal to nav-btn, nav-bar height. This is to center the logo */
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.nav-logo svg g {
+  fill: var(--color-white-variant);
+  transition: fill 550ms ease;
+}
+
+.nav-logo.color-switch svg g {
+  fill: var(--color-black-logo);
+}

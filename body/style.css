@@ -1,0 +1,45 @@
+.body {
+  /* box model */
+  position: relative;
+
+  /* visual */
+  background-color: var(--color-white-variant);
+}
+
+.body__project-img-box {
+  /* position */
+  position: fixed;
+  z-index: 4;
+}
+
+.body__loading-page {
+  /* position */
+  position: fixed;
+  z-index: 3;
+}
+
+.body__nav {
+  /* position */
+  position: fixed;
+  z-index: 2;
+}
+
+.body__header{
+  /* position */
+  position: relative;
+  z-index: 1;
+}
+
+.body__main{
+  /* position */
+  position: relative;
+  z-index: 1;
+
+  margin-top: 3rem;
+}
+
+.body__footer{
+  /* position */
+  position: relative;
+  z-index: 1;
+}

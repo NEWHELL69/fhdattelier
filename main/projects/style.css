@@ -1,0 +1,164 @@
+.projects h2 {
+  text-align: center;
+}
+
+.projects .project h3 {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  /* Overriding the previous height because the client does not want load more functionality, load more btn is also hidden */
+  height: fit-content;
+}
+
+
+.projects.load-more-imgs {
+  height: auto;
+}
+
+.projects__inner {
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.projects__inner.flow > *.project {
+  margin-top: 2rem;
+}
+
+.project__inner {
+  margin-left: 8px;
+  margin-top: 8px;
+  background-color: var(--color-accent);
+  border-radius: 8px;
+}
+
+.project-carousel {
+  transform: translate(-8px, -8px);
+  transition: transform 0.3s;
+  border-radius: 8px; 
+  height: 100%;
+  padding: 1rem;
+  background-color: whitesmoke;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 48rem) { 
+  .project-carousel:hover {
+    transform: translate(0, 0);
+  } 
+}
+
+.project .flickity-slider > * {
+  margin-left: 1rem;
+}
+
+.project .carousel-cell {
+  width: 100%;
+}
+
+@media (min-width: 48rem) {
+  .project .carousel-cell {
+    width: 30%;
+  }
+}
+
+.project-carousel img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-carousel.is-fullscreen {
+  transform: translate(0, 0);
+  border-radius: 0;
+}
+
+.project-carousel.is-fullscreen .carousel-cell {
+  width: 100%;
+  height: 100% !important;
+}
+
+.project-carousel.is-fullscreen .carousel-cell img {
+  object-fit: contain;
+}
+
+.project-carousel .flickity-button {
+  background: rgba(0,0,0,0.8);
+}
+
+.project-carousel .flickity-button-icon {
+  fill: var(--color-accent);
+}
+
+.project-carousel .flickity-fullscreen-button-exit {
+  width: 2rem;
+  height: 2rem;
+}
+
+.project-carousel .flickity-fullscreen-button-exit .flickity-button-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* For carousel fullscreen */
+main.zIndex3 {
+  z-index: 3;
+}
+
+/* project-360image */
+
+.project-360image {
+  /* position */
+  transform: translate(-8px, -8px);
+
+  /* box model */
+  padding: 1rem;
+
+  /* visual */
+  border-radius: 8px; 
+  background-color: white;
+  transition: transform 0.3s;
+}
+
+@media (min-width: 48rem) { 
+  .project-360image:hover {
+    transform: translate(0, 0);
+  } 
+}
+
+.project-360image iframe {
+  border: none;
+}
+
+.projects .projects__load-more-btn {
+  display: none;
+
+  margin-top: 1rem;
+  width: fit-content;
+  padding: 9px 20px 8px;
+  align-self: center;
+  background-color: var(--color-black-variant);
+  color: var(--color-white-variant);
+  border: 2px solid var(--color-black-variant);
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+.projects .projects__load-more-btn:hover {
+  background-color: var(--color-white-variant);
+  color: var(--color-black-variant);
+}

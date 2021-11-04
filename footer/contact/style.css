@@ -1,0 +1,117 @@
+.contact {
+  width: 100%;
+  padding: 1rem;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border-radius: 8px;
+  border-left: 8px solid var(--color-accent);
+  background-color: rgba(0,0,0,0.9);
+}
+
+@media (min-width: 48rem) {
+  .contact {
+    transition: border 0.3s ease-out, box-shadow 0.3s ease-out;
+    border-left: 0 solid transparent;
+  }
+
+  .contact:hover {
+    border-left: 8px solid var(--color-accent);
+    box-shadow: rgba(0, 0, 0, 0.2) 15px 20px 30px;
+  }
+}
+
+.contact.flow > * + *{
+  margin-top: 1rem;
+}
+
+.contact h2 {
+  text-align: center;
+  color: var(--color-white-variant);
+}
+
+@media (min-width: 48rem) {
+  .contact {
+    width: 50%;
+  }
+}
+
+/* ----- form ------ */
+
+.contact__form {
+  position: relative;
+}
+
+.contact__form .grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact__form fieldset {
+  border: none;
+}
+
+.contact__form legend {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -10;
+}
+
+.contact__form button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+
+  width: 150px;
+  padding: 0;
+  margin: 0;
+}
+
+.contact__form input, select, textarea {
+  width: 100%;
+  height: 2.5rem;
+  padding: 4px;
+
+  color: var(--color-white-variant);
+  
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--color-white-variant);
+  transition: border 550ms ease;
+}
+
+.contact__form input:hover {
+  border: 1px solid var(--color-white-variant);
+  border-radius: 4px;
+}
+.contact__form input::placeholder {
+  color: var(--color-white-variant);
+  border-radius: 4px;
+}
+
+.contact__form input:-webkit-autofill,
+.contact__form input:-webkit-autofill:hover, 
+.contact__form input:-webkit-autofill:focus, 
+.contact__form input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--color-white-variant) inset !important;
+}
+
+.contact__form .group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact__form button {
+  border: 1px solid var(--color-white-variant);
+  color: var(--color-white-variant);
+  background-color: transparent;
+  padding: 0.5rem;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.contact__form button:hover {
+  color: black;
+  background-color: var(--color-white-variant);
+}

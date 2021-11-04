@@ -1,0 +1,97 @@
+:root {
+  --color-white-variant: #ebe7e4;
+  --color-black-variant: black;
+  --color-black-logo: #22232c;
+  --color-accent: #C38E70;
+
+  /* Responsive design related classes */
+
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 36rem; /* 576px */
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 62rem; /* 992px */
+  --breakpoint-xl: 75rem; /* 1200px */
+}
+
+.wrapper {
+  /* box model */
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+@media (min-width: 36rem) {
+  .wrapper {
+    width: 36rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .wrapper {
+    width: 48rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  .wrapper {
+    width: 62rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  .wrapper {
+    width: 75rem;
+  }
+}
+
+/* --------------------------------- */
+
+.fadeInUp {
+  /* animation */
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+  100% { transform: translateY(0); }
+}
+
+.parallax {
+  /* Check script.js for implementation */
+}
+
+.full-bleed {
+  /* position */
+  margin-left: calc(50% - 50vw);
+
+  /* box model */
+  width: 100vw;
+}
+
+.theme__1 {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(6px);
+  border-left: 4px solid var(--color-accent-dark);
+}
+
+/* --------------------------------------------- */

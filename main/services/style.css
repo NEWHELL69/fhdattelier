@@ -1,0 +1,98 @@
+.services h2 {
+  /* position */
+  margin: 1rem;
+  margin-bottom: 2rem;
+
+  /* text */
+  text-align: center;
+  font-size: 2rem;
+}
+
+.icons-block__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .icons-block__inner {
+    /* box model */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.icons-block__inner.flow > * + * {
+}
+
+.icons-block .icon {
+  /* position */
+  margin-left: auto;
+
+  /* box model */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 17rem;
+  padding: 15px;
+
+  /* visual */
+  box-shadow: rgba(0, 0, 0, 0.15) 2.8px 2.8px 3.2px;
+  border-radius: 8px;
+
+  /* text */
+  white-space: nowrap;
+}
+
+.icons-block .icon:nth-child(even) {
+  /* position */
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* ----- Icon Theme 1 ----- */
+
+.icons-block .icon__theme-1 {
+  /* visual */
+  background-color: var(--color-black-variant);
+  border-left: 8px solid var(--color-accent);
+}
+
+@media (min-width: 48rem) {
+  .icons-block .icon {
+    /* visual */
+    border-left: 0 solid transparent;
+    transition: border 0.2s ease-out;
+  }
+
+  /* ----- Icon Theme 1 ----- */
+
+  .icons-block .icon__theme-1:hover {
+    border-left: 8px solid var(--color-accent);
+  }
+}
+
+.icons-block .icon h3 {
+  /* box model */
+  display: inline-block;
+  margin-left: 15px;
+
+  /* text */
+  font-weight: normal;
+}
+
+/* ----- Icon Theme 1 ----- */
+
+.icons-block .icon__theme-1 span {
+  /* text */
+  color: var(--color-accent);
+}
+
+.icons-block .icon__theme-1 h3 {
+  /* text */
+  color: var(--color-white-variant);
+}

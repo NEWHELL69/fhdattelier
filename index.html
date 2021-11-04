@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+  <meta name="description" content="Fhd attelier website is a place to represent work done by fhd attelier firm. This showcase allows companies to present their projects in a eye-catching way. It also helps in connecting with clients and potential clients.">
+
+  <!-- fb seo -->
+  <meta property="og:site_name" content="Fhd attelier website">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fhdattelier.com">
+  <meta property="og:title" content="Crafting living spaces">
+  <meta property="og:description" content="Fhd attelier website is a place to represent work done by fhd attelier firm. This showcase allows companies to present their projects in a eye-catching way. It also helps in connecting with clients and potential clients.">
+  <meta property="og:image" content="assets/logo/logo.webp">
+
+  <!-- twitter seo -->
+  <meta property="twitter:domain" content="fhdattelier.com">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://fhdattelier.com">
+  <meta property="twitter:title" content="Fhd attelier website">
+  <meta property="twitter:description" content="Fhd attelier website is a place to represent work done by fhd attelier firm. This showcase allows companies to present their projects in a eye-catching way. It also helps in connecting with clients and potential clients.">
+  <meta property="twitter:image" content="assets/logo/logo.webp">
+
+  <!-- google seo -->
+  <link rel="canonical" href="https://fhdattelier.com">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+    }
+  </style>
+  
+  <link rel="stylesheet" href="loading/style.css">
+
+  <link rel="stylesheet" href="utilities/style.css">
+  <link rel="stylesheet" href="body/style.css">
+  <link rel="stylesheet" href="header/style.css">  
+  <link rel="stylesheet" href="plugins/carousel/flickity.css">
+  <link rel="stylesheet" href="plugins/carousel/fullScreen/style.css">
+  <link rel="stylesheet" href="carousel/carousel.css">
+  <link rel="stylesheet" href="main/style.css">
+  <link rel="stylesheet" href="main/about/style.css">
+  <link rel="stylesheet" href="main/services/style.css">
+  <link rel="stylesheet" href="main/testimonials/style.css">
+  <link rel="stylesheet" href="main/projects/style.css">
+  <link rel="stylesheet" href="footer/style.css">
+  <link rel="stylesheet" href="footer/contact/style.css">
+  <link rel="stylesheet" href="nav/style.css">
+  <link rel="stylesheet" href="nav/navBtn/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Inter:wght@100;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/18b6024cfd.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&amp;display=swap" rel="stylesheet">
+</head>
+<body class="body">
+  <div class="loading-page body__loading-page">
+    <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="nav body__nav">
+    <div class="nav-logo nav__logo">
+      <a href="#home">
+        <svg version="1.0" width="812.000000pt" height="481.000000pt" viewBox="0 0 812.000000 481.000000" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(0.000000,481.000000) scale(0.100000,-0.100000)" stroke="none">
+            <path d="M0 2405 l0 -2405 4060 0 4060 0 0 2405 0 2405 -4060 0 -4060 0 0 -2405z m4990 695 l0 -1440 -1265 0 -1265 0 0 370 0 370 -135 0 -135 0 0 -1065 0 -1065 -960 0 -960 0 0 1180 0 1180 1500 0 1500 0 0 135 0 135 -1500 0 -1500 0 0 820 0 820 2360 0 2360 0 0 -1440z m1260 1416 c503 -94 910 -358 1202 -781 192 -277 317 -606 375 -985 24 -161 24 -539 0 -700 -79 -515 -286 -940 -614 -1261 -251 -247 -527 -398 -864 -473 -174 -39 -288 -46 -705 -46 l-384 0 0 2136 0 2136 448 -4 c372 -4 463 -8 542 -22z m1600 -448 l0 -473 -56 100 c-185 328 -420 584 -712 777 l-104 68 436 0 436 0 0 -472z m-2860 -3203 l0 -525 -1265 0 -1265 0 0 518 c0 285 3 522 7 525 3 4 573 7 1265 7 l1258 0 0 -525z m2857 -592 c-2 -2 -196 -2 -432 -1 l-427 3 76 48 c296 188 556 469 736 796 l45 82 3 -462 c1 -254 1 -464 -1 -466z"/>
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div class="nav-btn nav__btn">
+      <!-- This element cant be inside nav-bar because the container's functionality will interfere -->
+      <div class="nav-btn__toggle nav-btn__inner" aria-pressed="false" role="button" tabindex="0">
+        <div id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div id="cross">
+          <span></span>
+          <span></span> 
+        </div>
+      </div>
+    </div>
+    <div class="nav-bar nav__bar">
+      <nav class="nav-bar__inner">
+        <ul class="flow">
+          <li class="nav-bar__item"><a class="nav-bar__link nav-btn__toggle" href="#about">About</a></li>
+          <li class="nav-bar__item"><a class="nav-bar__link nav-btn__toggle" href="#services">Services</a></li>
+          <li class="nav-bar__item"><a class="nav-bar__link nav-btn__toggle" href="#projects">Projects</a></li>
+          <li class="nav-bar__item"><a class="nav-bar__link nav-btn__toggle" href="#contact">Contact</a></li>
+          <div class="nav-bar__social-links"> 
+            <li class="nav-bar__item"><a class="nav-bar__link nav-btn__toggle" href="https://www.instagram.com/fhdattelier" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li class="nav-bar__item"><a class="nav-bar__link nav-btn__toggle" href="https://www.facebook.com/pages/category/Interior-Design-Studio/FHD-Attelier-110685581260617" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          </div>
+        </ul>
+      </nav>
+    </div>  
+  </div>
+  <header class="header body__header" id="home">
+    <div class="header__inner">
+      <div class="header__carousel">
+        <div class="main-carousel">
+          <div class="carousel-cell">
+            <picture>
+              <source media="(max-width: 576px)" srcset="assets/images/placeholders/w576-image1.webp">
+              <source media="(max-width: 768px)" srcset="assets/images/placeholders/w768-image1.webp">
+              <source media="(max-width: 992px)" srcset="assets/images/placeholders/w992-image1.webp">
+              <source media="(max-width: 1200px)" srcset="assets/images/placeholders/w1200-image1.webp">
+              <source media="(min-width: 1200.1px)" srcset="assets/images/placeholders/image1.webp">
+              <img src="assets/images/placeholders/image1.jpeg" alt="">
+            </picture>
+          </div>
+          <div class="carousel-cell">
+            <picture>
+              <source media="(max-width: 576px)" srcset="assets/images/placeholders/w576-image2.webp">
+              <source media="(max-width: 768px)" srcset="assets/images/placeholders/w768-image2.webp">
+              <source media="(max-width: 992px)" srcset="assets/images/placeholders/w992-image2.webp">
+              <source media="(max-width: 1200px)" srcset="assets/images/placeholders/w1200-image2.webp">
+              <source media="(min-width: 1200.1px)" srcset="assets/images/placeholders/image2.webp">
+              <img src="assets/images/placeholders/image2.jpeg" alt="">
+            </picture>
+          </div>
+          <div class="carousel-cell">
+            <picture>
+              <source media="(max-width: 576px)" srcset="assets/images/placeholders/w576-image3.webp">
+              <source media="(max-width: 768px)" srcset="assets/images/placeholders/w768-image3.webp">
+              <source media="(max-width: 992px)" srcset="assets/images/placeholders/w992-image3.webp">
+              <source media="(max-width: 1200px)" srcset="assets/images/placeholders/w1200-image3.webp">
+              <source media="(min-width: 1200.1px)" srcset="assets/images/placeholders/image3.webp">
+              <img src="assets/images/placeholders/image3.jpeg" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="header__overlay">
+        <div class="header-content">
+          <div class="header-content__inner">
+            <h1>FHD ATTELIER</h1>
+            <p class="subtitle fadeInUp">Crafting living spaces</p>
+            <a class="arrow arrow__bounce" href="#about"><span class="material-icons-outlined">expand_more</span></a>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </header>
+  <main class="main body__main">
+    <div class="wrapper">
+      <div class="main__inner flow">
+        <section class="about" id="about">
+          <div class="text-block flow parallax">
+            <h2>About</h2>
+            <p>
+              <span class="qoute">"</span>As an owner-managed studio, our aim is to develop in a sustainable and growth-led manner. For us, the customer is at the heart of everything.</br></br>
+
+              The distinctive design approach of ours rests on attention to quality, innovative , efficient thought process and an awareness of our responsibilities.</br></br>
+
+              Striving for all-round excellence is what drives us, day in and day out. We are convinced that with these strong values we will achieve our goal : we want to be best in design and execution services. <span class="qoute">"</span></br></br>
+            </p>
+          </div>
+          <div class="img-container">
+            <picture>
+              <source media="(max-width: 576px)" srcset="assets/sketches/w576-sketch1.webp">
+              <source media="(max-width: 768px)" srcset="assets/sketches/w768-sketch1.webp">
+              <source media="(max-width: 992px)" srcset="assets/sketches/w992-sketch1.webp">
+              <source media="(max-width: 1200px)" srcset="assets/sketches/w1200-sketch1.webp">
+              <source media="(min-width: 1200.1px)" srcset="assets/sketches/sketch1.webp">
+              <img src="assets/sketches/sketch1.png" alt="">
+            </picture>
+          </div>
+        </section>
+        <section class="services" id="services">
+          <h2>Our services</h2>
+          <div class="icons-block services__icons-block">
+            <div class="icons-block__inner flow">
+              <div class="icon icon__theme-1">
+                <span class="material-icons-outlined">place</span>
+                <h3>Site Inspection</h3>
+              </div>
+              <div class="icon icon__theme-3 icon__theme-1">
+                <span class="material-icons-outlined">savings</span>
+                <h3>Planning & Budgeting</h3>
+              </div>
+              <div class="icon icon__theme-3 icon__theme-1">
+                <span class="material-icons-outlined ">lightbulb</span>
+                <h3>Electrical & Lighting</h3>
+              </div>
+              <div class="icon icon__theme-2 icon__theme-1">
+                <span class="material-icons-outlined">local_shipping</span>
+                <h3>Fabrication Transport</h3>
+              </div>
+              <div class="icon icon__theme-1">
+                <span class="material-icons-outlined">light</span>
+                <h3>Modular Solutions</h3>
+              </div>
+              <div class="icon icon__theme-2 icon__theme-1">
+                <span class="material-icons-outlined">interests</span>
+                <h3>Variety of MoodBoards</h3>
+              </div>
+              <div class="icon icon__theme-3 icon__theme-1">
+                <span class="material-icons-outlined">chair</span>
+                <h3>Furniture for all rooms</h3>
+              </div>
+              <div class="icon icon__theme-2 icon__theme-1">
+                <span class="material-icons-outlined">developer_board</span>
+                <h3>Design Concepts</h3>
+              </div>
+              <div class="icon icon__theme-1">
+                <span class="material-icons-outlined">deck</span>
+                <h3>Decor Accessories</h3>
+              </div>  
+              <div class="icon icon__theme-3 icon__theme-1">
+                <span class="material-icons-outlined">place</span>
+                <h3>Vastu Consultancy</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section id="testimonials" class="testimonials">
+            <div class="testimonials__inner">
+              <h2>Client testimonials</h2>  
+              <div class="img-video-container">
+                <div class="img-video-block flow">
+                  <picture>
+                    <source type="image/webp" srcset="assets/images/testImage1/image1.webp 1920w, 
+                                                      assets/images/testImage1/w1200-image1.webp 1200w,
+                                                      assets/images/testImage1/w992-image1.webp 992w,
+                                                      assets/images/testImage1/w768-image1.webp 768w,
+                                                      assets/images/testImage1/w576-image1.webp 576w,"
+                                              sizes="(max-width: 36em) 576px, (max-width: 48em) 768px,
+                                                     (max-width: 62em) 992px, (max-width: 75em) 1200px,
+                                                     1920px">
+                    <source type="image/jpeg" srcset="assets/images/testImage1/image1.jpeg">
+                    <img src="assets/images/testImage1/image1.jpeg" alt="">
+                  </picture>
+                  <iframe src="https://www.youtube-nocookie.com/embed/Zv11L-ZfrSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                </div>
+              </div>
+              <div class="testimonial-container">
+                <div class="testimonial-block flow">
+                  <picture>
+                    <source type="image/webp" srcset="assets/images/testImage1/image1.webp 1920w, 
+                                                      assets/images/testImage1/w1200-image1.webp 1200w,
+                                                      assets/images/testImage1/w992-image1.webp 992w,
+                                                      assets/images/testImage1/w768-image1.webp 768w,
+                                                      assets/images/testImage1/w576-image1.webp 576w,"
+                                              sizes="(max-width: 36em) 576px, (max-width: 48em) 768px,
+                                                     (max-width: 62em) 992px, (max-width: 75em) 1200px,
+                                                     1920px">
+                    <source type="image/jpeg" srcset="assets/images/testImage1/image1.jpeg">
+                    <img src="assets/images/testImage1/image1.jpeg" alt="">
+                  </picture>
+                  <iframe src="https://www.youtube-nocookie.com/embed/Zv11L-ZfrSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  
+                  <h3>Project 1 Name</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quis, dolore dolor enim numquam fuga, expedita nemo atque perspiciatis nisi quaerat. Assumenda non quam libero! Delectus dolores corporis quibusdam cum!</p>       
+                </div>
+                <div class="testimonial-block flow">
+                  <picture>
+                    <source type="image/webp" srcset="assets/images/image2.webp">
+                    <source type="image/jpeg" srcset="assets/images/image2.jpeg">
+                    <img src="assets/images/image2.jpeg" alt="">
+                  </picture>
+                  <iframe src="https://www.youtube-nocookie.com/embed/boIerkcxPWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  
+                  <h3>Project 2 Name</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quis, dolore dolor enim numquam fuga, expedita nemo atque perspiciatis nisi quaerat. Assumenda non quam libero! Delectus dolores corporis quibusdam cum!</p>       
+                </div>
+              </div>
+            </div>
+        </section> -->
+        <section id="projects" class="projects">
+          <div class="projects__inner flow">
+            <h2>Projects</h2>
+            <div class="project">
+              <h3>Project 1</h3>
+              <div class="project__inner">
+                <div class="project-carousel flow">
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project1/w576-image1.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project1/w768-image1.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project1/w992-image1.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project1/w1200-image1.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project1/image1.webp">
+                      <img src="assets/images/project1/image1.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project1/w576-image2.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project1/w768-image2.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project1/w992-image2.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project1/w1200-image2.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project1/image2.webp">
+                      <img src="assets/images/project1/image2.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project1/w576-image3.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project1/w768-image3.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project1/w992-image3.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project1/w1200-image3.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project1/image3.webp">
+                      <img src="assets/images/project1/image3.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project1/w576-image4.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project1/w768-image4.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project1/w992-image4.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project1/w1200-image4.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project1/image4.webp">
+                      <img src="assets/images/project1/image4.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project1/w576-image5.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project1/w768-image5.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project1/w992-image5.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project1/w1200-image5.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project1/image5.webp">
+                      <img src="assets/images/project1/image5.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project1/w576-image6.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project1/w768-image6.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project1/w992-image6.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project1/w1200-image6.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project1/image6.webp">
+                      <img src="assets/images/project1/image6.jpeg" alt="">
+                    </picture>
+                  </div>
+                </div>
+                <div class="project-360image">
+                  <iframe height="350px" width="100%" allowfullscreen="true" 
+                    src="https://momento360.com/e/uc/7693a4105f9b49b1ab2e6b66d2adae7c?utm_campaign=embed&utm_source=other&size=medium&autoplay-collection=true&ap-interval-coll=4">
+                  </iframe>    
+                </div>
+              </div>  
+            </div>   
+            <div class="project"> 
+              <h3>Project 2</h3>
+              <div class="project__inner">
+                <div class="project-carousel flow">
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w576-image1.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w768-image1.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w992-image1.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w1200-image1.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/aadisBedroom/finalRenders/image1.webp">
+                      <img src="assets/images/project2/aadisBedroom/finalRenders/image1.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w576-image2.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w768-image2.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w992-image2.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w1200-image2.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/aadisBedroom/finalRenders/image2.webp">
+                      <img src="assets/images/project2/aadisBedroom/finalRenders/image2.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w576-image3.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w768-image3.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w992-image3.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w1200-image3.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/aadisBedroom/finalRenders/image3.webp">
+                      <img src="assets/images/project2/aadisBedroom/finalRenders/image3.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w576-image4.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w768-image4.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w992-image4.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/aadisBedroom/finalRenders/w1200-image4.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/aadisBedroom/finalRenders/image4.webp">
+                      <img src="assets/images/project2/aadisBedroom/finalRenders/image4.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/aadisBedroom/oldRenders/w576-image1.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/aadisBedroom/oldRenders/w768-image1.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/aadisBedroom/oldRenders/w992-image1.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/aadisBedroom/oldRenders/w1200-image1.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/aadisBedroom/oldRenders/image1.webp">
+                      <img src="assets/images/project2/aadisBedroom/oldRenders/image1.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/aadisBedroom/oldRenders/w576-image2.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/aadisBedroom/oldRenders/w768-image2.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/aadisBedroom/oldRenders/w992-image2.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/aadisBedroom/oldRenders/w1200-image2.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/aadisBedroom/oldRenders/image2.webp">
+                      <img src="assets/images/project2/aadisBedroom/oldRenders/image2.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/aadisBedroom/oldRenders/w576-image3.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/aadisBedroom/oldRenders/w768-image3.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/aadisBedroom/oldRenders/w992-image3.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/aadisBedroom/oldRenders/w1200-image3.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/aadisBedroom/oldRenders/image3.webp">
+                      <img src="assets/images/project2/aadisBedroom/oldRenders/image3.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/kitchen/w576-image1.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/kitchen/w768-image1.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/kitchen/w992-image1.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/kitchen/w1200-image1.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/kitchen/image1.webp">
+                      <img src="assets/images/project2/kitchen/image1.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/kitchen/w576-image2.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/kitchen/w768-image2.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/kitchen/w992-image2.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/kitchen/w1200-image2.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/kitchen/image2.webp">
+                      <img src="assets/images/project2/kitchen/image2.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/kitchen/w576-image3.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/kitchen/w768-image3.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/kitchen/w992-image3.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/kitchen/w1200-image3.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/kitchen/image3.webp">
+                      <img src="assets/images/project2/kitchen/image3.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/kitchen/w576-image4.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/kitchen/w768-image4.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/kitchen/w992-image4.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/kitchen/w1200-image4.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/kitchen/image4.webp">
+                      <img src="assets/images/project2/kitchen/image4.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/varshasbedroom/w576-image1.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/varshasbedroom/w768-image1.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/varshasbedroom/w992-image1.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/varshasbedroom/w1200-image1.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/varshasbedroom/image1.webp">
+                      <img src="assets/images/project2/varshasbedroom/image1.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/varshasbedroom/w576-image2.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/varshasbedroom/w768-image2.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/varshasbedroom/w992-image2.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/varshasbedroom/w1200-image2.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/varshasbedroom/image2.webp">
+                      <img src="assets/images/project2/varshasbedroom/image2.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/varshasbedroom/w576-image3.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/varshasbedroom/w768-image3.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/varshasbedroom/w992-image3.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/varshasbedroom/w1200-image3.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/varshasbedroom/image3.webp">
+                      <img src="assets/images/project2/varshasbedroom/image3.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/varshasbedroom/w576-image4.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/varshasbedroom/w768-image4.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/varshasbedroom/w992-image4.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/varshasbedroom/w1200-image4.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/varshasbedroom/image4.webp">
+                      <img src="assets/images/project2/varshasbedroom/image4.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/varshasbedroom/w576-image5.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/varshasbedroom/w768-image5.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/varshasbedroom/w992-image5.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/varshasbedroom/w1200-image5.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/varshasbedroom/image5.webp">
+                      <img src="assets/images/project2/varshasbedroom/image5.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project2/varshasbedroom/w576-image6.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project2/varshasbedroom/w768-image6.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project2/varshasbedroom/w992-image6.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project2/varshasbedroom/w1200-image6.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project2/varshasbedroom/image6.webp">
+                      <img src="assets/images/project2/varshasbedroom/image6.jpeg" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>    
+            </div>    
+            <div class="project"> 
+              <h3>Project 3</h3>
+              <div class="project__inner">
+                <div class="project-carousel flow">
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/w576-image1.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/w768-image1.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/w992-image1.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/w1200-image1.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/image1.webp">
+                      <img src="assets/images/project3/image1.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/w576-image2.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/w768-image2.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/w992-image2.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/w1200-image2.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/image2.webp">
+                      <img src="assets/images/project3/image2.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/w576-image3.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/w768-image3.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/w992-image3.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/w1200-image3.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/image3.webp">
+                      <img src="assets/images/project3/image3.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/w576-image4.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/w768-image4.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/w992-image4.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/w1200-image4.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/image4.webp">
+                      <img src="assets/images/project3/image4.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/w576-image5.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/w768-image5.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/w992-image5.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/w1200-image5.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/image5.webp">
+                      <img src="assets/images/project3/image5.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/w576-image5.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/w768-image5.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/w992-image5.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/w1200-image5.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/image5.webp">
+                      <img src="assets/images/project3/image5.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/kitchen/w576-image1.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/kitchen/w768-image1.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/kitchen/w992-image1.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/kitchen/w1200-image1.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/kitchen/image1.webp">
+                      <img src="assets/images/project3/kitchen/image1.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/kitchen/w576-image2.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/kitchen/w768-image2.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/kitchen/w992-image2.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/kitchen/w1200-image2.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/kitchen/image2.webp">
+                      <img src="assets/images/project3/kitchen/image2.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/kitchen/w576-image3.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/kitchen/w768-image3.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/kitchen/w992-image3.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/kitchen/w1200-image3.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/kitchen/image3.webp">
+                      <img src="assets/images/project3/kitchen/image3.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/livingDiningFoyer/w576-image1.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/livingDiningFoyer/w768-image1.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/livingDiningFoyer/w992-image1.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/livingDiningFoyer/w1200-image1.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/livingDiningFoyer/image1.webp">
+                      <img src="assets/images/project3/livingDiningFoyer/image1.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/livingDiningFoyer/w576-image2.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/livingDiningFoyer/w768-image2.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/livingDiningFoyer/w992-image2.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/livingDiningFoyer/w1200-image2.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/livingDiningFoyer/image2.webp">
+                      <img src="assets/images/project3/livingDiningFoyer/image2.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/livingDiningFoyer/w576-image3.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/livingDiningFoyer/w768-image3.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/livingDiningFoyer/w992-image3.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/livingDiningFoyer/w1200-image3.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/livingDiningFoyer/image3.webp">
+                      <img src="assets/images/project3/livingDiningFoyer/image3.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/livingDiningFoyer/w576-image4.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/livingDiningFoyer/w768-image4.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/livingDiningFoyer/w992-image4.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/livingDiningFoyer/w1200-image4.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/livingDiningFoyer/image4.webp">
+                      <img src="assets/images/project3/livingDiningFoyer/image4.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/livingDiningFoyer/w576-image4.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/livingDiningFoyer/w768-image4.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/livingDiningFoyer/w992-image4.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/livingDiningFoyer/w1200-image4.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/livingDiningFoyer/image4.webp">
+                      <img src="assets/images/project3/livingDiningFoyer/image4.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/livingDiningFoyer/w576-image5.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/livingDiningFoyer/w768-image5.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/livingDiningFoyer/w992-image5.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/livingDiningFoyer/w1200-image5.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/livingDiningFoyer/image5.webp">
+                      <img src="assets/images/project3/livingDiningFoyer/image5.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/livingDiningFoyer/w576-image6.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/livingDiningFoyer/w768-image6.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/livingDiningFoyer/w992-image6.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/livingDiningFoyer/w1200-image6.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/livingDiningFoyer/image6.webp">
+                      <img src="assets/images/project3/livingDiningFoyer/image6.jpeg" alt="">
+                    </picture>
+                  </div>
+                  <div class="carousel-cell">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="assets/images/project3/livingDiningFoyer/w576-image7.webp">
+                      <source media="(max-width: 768px)" srcset="assets/images/project3/livingDiningFoyer/w768-image7.webp">
+                      <source media="(max-width: 992px)" srcset="assets/images/project3/livingDiningFoyer/w992-image7.webp">
+                      <source media="(max-width: 1200px)" srcset="assets/images/project3/livingDiningFoyer/w1200-image7.webp">
+                      <source media="(min-width: 1200.1px)" srcset="assets/images/project3/livingDiningFoyer/image7.webp">
+                      <img src="assets/images/project3/livingDiningFoyer/image7.jpeg" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>    
+            </div>   
+          </div> 
+          <button class="projects__load-more-btn">Load More</button>
+        </section>
+      </div>  
+    </div>  
+  </main>
+  <footer class="footer body__footer">
+    <div class="wrapper">
+      <div class="footer__inner">
+        <section class="contact flow footer__contact" id="contact">
+          <h2>Leave a request</h2>
+          <div class="contact__form">
+            <form action="" method="POST">
+              <fieldset>
+                <legend>Your contact information</legend>
+                <div class="grid-container">
+                  <div class="group">
+                    <label for="contact-name">
+                      <input type="text" id="contact-name" placeholder="Name" name="name" required>
+                    </label>
+                    <label for="contact-phone">
+                      <input type="text" id="contact-phone" name="phone" placeholder="Phone" required>
+                    </label>
+                  </div>  
+                  <label for="contact-email">
+                    <input type="email" id="contact-email" name="email" placeholder="Email" required>
+                  </label>
+                  <label for="contact-discription">
+                    <textarea name="discription" id="contact-discription" cols="30" rows="10"></textarea>
+                  </label>
+                  <label for="contact-budget">
+                    <input type="text" id="contact-budget" placeholder="Total Project budget" name="budget">
+                  </label>
+                  <label for="contact-date">
+                    <input type="text" id="contact-date" placeholder="Project to be completed by" name="date">
+                  </label>
+                  <label for="contact-us">
+                    <input type="text" id="contact-us" placeholder="How did you hear about us" name="us">
+                  </label>
+                  <button type="submit">Submit</button>
+                </div>  
+              </fieldset>
+            </form>
+          </div>
+        </section>
+        <div class="img-container">
+          <picture>
+            <source media="(max-width: 576px)" srcset="assets/sketches/w576-sketch2.webp">
+            <source media="(max-width: 768px)" srcset="assets/sketches/w768-sketch2.webp">
+            <source media="(max-width: 992px)" srcset="assets/sketches/w992-sketch2.webp">
+            <source media="(max-width: 1200px)" srcset="assets/sketches/w1200-sketch2.webp">
+            <source media="(min-width: 1200.1px)" srcset="assets/sketches/sketch2.webp">
+            <img src="assets/sketches/sketch2.png" alt="">
+          </picture>
+        </div>
+        <div class="contact__strip">
+          <div class="social-links">
+            <div class="logo-block">
+              <img src="assets/logo/logo.svg" alt="">
+              <p class="logo-text">FHD ATTELIER</p>
+            </div>
+            <a href="https://www.instagram.com/fhdattelier" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/pages/category/Interior-Design-Studio/FHD-Attelier-110685581260617" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="contact__our-info">
+            <h2>Contact Us</h2>
+            <p class="flow">
+              <span>117/Q/100, Sharda Nagar, Kanpur - 208025 India<a href="#"></a></span><br>
+              <span>+91 9535289416</span><br>          
+              <span>fhdattelier@gmail.com</span><br>    
+            </p>
+          </div>
+          <div class="credit-link">
+            <a href="#"><span>lorem ipsum</span></a>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </footer>
+  <script src="loading/script.js"></script>
+  <script src="nav/script.js"></script>
+  <script src="nav/navBtn/script.js"></script>
+  <!-- Order for below 2 scripts is important -->
+  <script src="plugins/carousel/flickity.pkgd.js"></script>
+  <script src="plugins/carousel/fullScreen/script.js"></script>
+  <script src="carousel/carousel.js"></script>
+  <script src="header/script.js"></script>
+  <script src="utilities/script.js"></script>
+  <script src="main/projects/script.js"></script>
+  <script src="main/testimonials/script.js"></script>
+</body>
+</html>
