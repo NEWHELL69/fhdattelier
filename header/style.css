@@ -61,7 +61,7 @@ header {
 
   /* text */
   color: var(--color-white-variant);
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1.3rem, 3vw, 3rem);
   font-weight: lighter;
 
   /* fade in up animation speed */
