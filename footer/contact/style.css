@@ -89,6 +89,11 @@
   border-radius: 4px;
 }
 
+.contact__form textarea::placeholder {
+  color: var(--color-white-variant);
+  border-radius: 4px;
+}
+
 .contact__form input:-webkit-autofill,
 .contact__form input:-webkit-autofill:hover, 
 .contact__form input:-webkit-autofill:focus, 
