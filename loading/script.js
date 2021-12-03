@@ -10,7 +10,7 @@
     });
   }
 
-  setTimeout(toggleLoadingPage, 3000);
+  setTimeout(toggleLoadingPage, 1000);
 
   // window.addEventListener("load", () => {
   //   currentTime = Date.now();
