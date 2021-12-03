@@ -79,7 +79,7 @@ header {
   color: var(--color-accent);
 }
 
-.header-content__inner .arrow span {
+.header-content__inner .arrow i {
   font-size: 100px;
 }
 
